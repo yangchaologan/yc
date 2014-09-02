@@ -118,9 +118,7 @@ function() {
     });
 
     var actionExecutor = Ext.create('component.MultiActionExecutor', {
-        download : function(action, recs) {
-            //TODO
-        },
+
         executors : [Ext.create('component.CommonActionExecutor', {
             callback : function(action) {
                 if (['deletefdr', 'fdrmoveto', 'fdrcopyto'].indexOf(action.id) != -1) {
